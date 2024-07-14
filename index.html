@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Livewell Housing Solutions Ltd Form</title>
+    <title>Livewell Housing Solutions Ltd Form.</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -20,7 +20,7 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
-        h2, h3 {
+        h2, h3, p {
             text-align: center;
             margin-bottom: 10px;
         }
@@ -33,7 +33,7 @@
         }
 
         .form-info {
-            text-align: right;
+            text-align: center;
         }
 
         .form-group {
@@ -75,6 +75,7 @@
 <body>
     <div class="form-container">
         <h2>Livewell Housing Solutions Ltd</h2>
+        <p><strong>motto:</strong> ... Own Your Tomorrow.</p>
         <h3>Registration / Membership Form</h3>
         <div class="form-header">
             
@@ -123,7 +124,7 @@
             </div>
             <div class="form-group">
                 <label for="undertaking">Undertaking:</label>
-                <textarea id="undertaking" name="undertaking" rows="4" required>I hereby submit legitimately my consent to the declared purpose of this Organization. I solely agree to the set down rules and policies of Livewell Jousing Solutions Ltd...</textarea>
+                <textarea id="undertaking" name="undertaking" rows="4" required>I hereby submit legitimately my consent to the declared purpose of this Organization. I solely agree to the set down rules and policies of Livewell Housing Solutions Ltd...</textarea>
             </div>
             
             <button type="button" onclick="sendEmail()">Submit</button>
@@ -149,7 +150,7 @@
             const form = document.getElementById('membershipForm');
             const formData = new FormData(form);
             
-            const mailtoLink = `mailto:mondaykingsley80@gmail.com?subject=Membership%20Form%20Submission&body=${encodeURIComponent(
+            const mailtoLink = `mailto:livewell.equity@gmail.com?subject=Membership%20Form%20Submission&body=${encodeURIComponent(
                 `Name: ${formData.get('name')}\n` +
                 `Nationality: ${formData.get('nationality')}\n` +
                 `Gender: ${formData.get('gender')}\n` +
@@ -169,5 +170,6 @@
     </script>
 </body>
 </html>
+
 
 
